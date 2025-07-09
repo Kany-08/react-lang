@@ -1,5 +1,4 @@
 import S from "./App.module.css";
-
 import { Main } from "./components/Main/Main";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -17,9 +16,9 @@ function App() {
   return (
     <LanguageContext.Provider value={contextValue}>
       <div className={S.container}>
-        <Header language={language} />
-        <Main className={S.main} language={language} />
-        <Footer language={language} />
+        <Header />
+        <Main className={S.main} />
+        <Footer />
       </div>
     </LanguageContext.Provider>
   );
